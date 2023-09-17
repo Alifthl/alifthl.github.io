@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+:root {
+  --primary: #c778dd;
+  --bg: #282c33;
+  --gray: #abb2bf;
+  --white: #ffffff;
+  --font: "Fira Code", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+span {
+  color: var(--primary);
+}
+
+nav {
+  width: 80%;
+  height: 62px;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.active {
+  color: var(--white);
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header aside {
+  margin-top: 70px;
+}
+
+header aside h1 {
+  font-size: 32px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 600;
+}
+
+header aside p {
+  padding: 20px 0;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+header aside button {
+  border: 1px solid var(--primary);
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font);
+  color: var(--white);
+}
+
+header .aside {
+  position: relative;
+}
+
+header .aside .image {
+  position: relative;
+  right: 150px;
+}
+
+header .aside .head {
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+header .aside .logo {
+  position: absolute;
+  background: transparent;
+  left: 120px;
+}
+header .aside .parag {
+  margin-top: 173px;
+}
+header .aside .parag p {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--white);
+  padding: 3px;
+}
+
+.quote {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.quote p {
+  border: 1px solid var(--gray);
+  width: 700px;
+  padding: 20px;
+  font-size: 24px;
+  font-family: var(--font);
+  color: var(--white);
+}
+
+.quote .small {
+  width: 130px;
+  margin-left: 590px;
+  padding: 10px;
+  border-top: 0;
+}
+
+.project {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project .title .project-t {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.project .title .project-t h1 {
+  font-size: 32px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.project .title .project-t p {
+  width: 500px;
+  border-top: 2px solid var(--primary);
+}
+
+.project .title p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.content .contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .contents img,
+.tech,
+.titles {
+  border: 1px solid var(--white);
+}
+
+.content .contents .tech {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  border-top: 0;
+}
+
+.content .contents .tech,
+.titles p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.content .contents .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 10px 20px 10px;
+  border-top: 0;
+}
+
+.content .contents .titles h2 {
+  font-size: 24px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.content .contents .titles p a {
+  border: 1px solid var(--primary);
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.skill {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.title p {
+  width: 300px;
+  border-top: 2px solid var(--primary);
+}
+
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.main-about .about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-about .about p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.main-about .image {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  top: -70px;
+}
