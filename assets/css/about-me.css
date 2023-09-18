@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+:root {
+  --primary: #c778dd;
+  --bg: #282c33;
+  --gray: #abb2bf;
+  --white: #ffffff;
+  --font: "Fira Code", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+span {
+  color: var(--primary);
+}
+
+nav {
+  width: 80%;
+  height: 62px;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.active {
+  color: var(--white);
+}
+
+.about-me {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.title p {
+  width: 300px;
+  border-top: 2px solid var(--primary);
+}
+
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.main-about .about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-about .about p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.main-about .image {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  top: -70px;
+}
+
+.skill {
+  width: 80%;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.skill .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+
+.skill .skills .language,
+.other,
+.tools,
+.framework {
+  border: 1px solid var(--gray);
+}
+
+.titles {
+  border-bottom: 1px solid var(--gray);
+  text-align: left;
+}
+
+.titles,
+.content p {
+  padding: 10px 30px 10px 5px;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.content p {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid var(--primary);
+  margin-top: 50px;
+}
+
+footer .content {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 400;
+}
+
+footer .content p .title {
+  font-weight: 500;
+  padding-right: 10px;
+  color: var(--white);
+}
+
+footer .content p .email {
+  color: var(--gray);
+}
+
+footer .content .media h1 {
+  font-size: 24px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+footer .copyright {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
