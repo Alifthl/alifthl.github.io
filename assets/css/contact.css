@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+:root {
+  --primary: #c778dd;
+  --bg: #282c33;
+  --gray: #abb2bf;
+  --white: #ffffff;
+  --font: "Fira Code", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+span {
+  color: var(--primary);
+}
+
+nav {
+  width: 80%;
+  height: 62px;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.icon {
+  display: none;
+}
+
+.icon a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.active {
+  color: var(--white);
+}
+
+section {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.title h2 {
+  margin-top: 30px;
+  font-size: 28px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+.title p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.contact .contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .contacts p {
+  font-family: var(--font);
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact .contacts .message {
+  border: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.contact .contacts .message h1 {
+  font-family: var(--font);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact .contacts .message p {
+  font-weight: 400;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid var(--primary);
+  margin-top: 50px;
+}
+
+footer .content {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content p {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+footer .content p .title {
+  font-weight: 500;
+  padding-right: 10px;
+  color: var(--white);
+}
+
+footer .content p .email {
+  color: var(--gray);
+}
+
+footer .content .media h1 {
+  font-size: 24px;
+  font-family: var(--font);
+  color: var(--white);
+  font-weight: 500;
+}
+
+footer .copyright {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 576px) {
+  /* For mobile phones: */
+  nav h1 {
+    z-index: 100;
+  }
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 20px;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(-100%);
+    background-color: var(--bg);
+    transition: all 0.5s;
+  }
+
+  nav ul.slider {
+    transform: translateY(0);
+  }
+
+  header .image img {
+    z-index: -10;
+  }
+
+  .icon {
+    display: block;
+    z-index: 100;
+  }
+  .contact .contacts .message {
+    margin-top: 20px;
+  }
+}
